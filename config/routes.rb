@@ -4,13 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  resources :posts
+  # resources :posts
   root to: 'posts#index'
 
   resources :posts do
     resources :comments
   end
 
+  resources :tags
 
 
   # Example of regular route:
