@@ -1,4 +1,6 @@
 <%= @post.title %><br/>
+<p><%= image_tag @post.image.url %></p>
+
 <%= @post.body %>
 <h3> Comments (<%= @post.comments.size %></h3>
 <%=render partial: 'comments/form' %>
